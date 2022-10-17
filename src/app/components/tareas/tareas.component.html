@@ -9,7 +9,7 @@
             >
         </div>
         <div class="col-lg-6 offset-lg-3 mt-2">
-            <div class="card p-2">
+            <div *ngIf="listaTareas.length === 0" class="card p-2">
                 <h6>No hay tareas para mostrar</h6>
             </div>
             <ul class="list-group">
