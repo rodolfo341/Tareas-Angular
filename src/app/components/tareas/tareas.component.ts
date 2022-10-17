@@ -26,7 +26,15 @@ export class TareasComponent implements OnInit {
         this.listaTareas.push(tarea);
 
         // Resetform
-        this.nombreTarea = '';
+        this.nombreTarea = ''; 
+    }
+
+    eliminarTarea(indice: number): void {
+        this.listaTareas.splice(indice,1);
+    }
+
+    actualizarTarea(indice: number, tarea: Tarea): void{
+        this.listaTareas[indice].estado = !tarea.estado;
     }
 
 }
