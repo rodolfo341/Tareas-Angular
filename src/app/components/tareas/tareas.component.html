@@ -14,14 +14,14 @@
             </div>
             <ul class="list-group">
                 <li *ngFor="let tarea of listaTareas; let i = index" class="list-group-item d-flex justify-content-between">
-                    <i  [class.text-success] = "tarea.estado"
+                    <i   
                         [ngClass] = "tarea.estado 
                             ? 'fa-solid fa-circle-check' 
                             : 'cursor fa-regular fa-circle'"                        
                         (click) = "actualizarTarea(i, tarea)">                        
                     </i>
                     
-                    {{ tarea.nombre}}
+                    {{ tarea.nombre }}
                     
                     <i  class = "cursor fa-solid fa-trash-can text-danger" 
                         (click) = "eliminarTarea(i)">
