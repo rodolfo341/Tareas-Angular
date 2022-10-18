@@ -36,5 +36,5 @@ export class TareasComponent implements OnInit {
     actualizarTarea(indice: number, tarea: Tarea): void{
         this.listaTareas[indice].estado = !tarea.estado;
     }
-
+    
 }
